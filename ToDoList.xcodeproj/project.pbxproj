@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630E41101A726B9A0050791F /* AddToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630E410F1A726B9A0050791F /* AddToDoListViewController.m */; };
+		630E41131A729FBE0050791F /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630E41121A729FBE0050791F /* ToDoListTableViewController.m */; };
 		631DCE781A7144D0004FFE9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 631DCE771A7144D0004FFE9E /* main.m */; };
 		631DCE7B1A7144D0004FFE9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 631DCE7A1A7144D0004FFE9E /* AppDelegate.m */; };
 		631DCE7E1A7144D0004FFE9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 631DCE7D1A7144D0004FFE9E /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630E410E1A726B9A0050791F /* AddToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoListViewController.h; sourceTree = "<group>"; };
+		630E410F1A726B9A0050791F /* AddToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoListViewController.m; sourceTree = "<group>"; };
+		630E41111A729FBE0050791F /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = SOURCE_ROOT; };
+		630E41121A729FBE0050791F /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = SOURCE_ROOT; };
 		631DCE721A7144D0004FFE9E /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631DCE761A7144D0004FFE9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		631DCE771A7144D0004FFE9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,11 +87,15 @@
 		631DCE741A7144D0004FFE9E /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				630E41111A729FBE0050791F /* ToDoListTableViewController.h */,
+				630E41121A729FBE0050791F /* ToDoListTableViewController.m */,
 				631DCE791A7144D0004FFE9E /* AppDelegate.h */,
 				631DCE7A1A7144D0004FFE9E /* AppDelegate.m */,
 				631DCE7C1A7144D0004FFE9E /* ViewController.h */,
 				631DCE7D1A7144D0004FFE9E /* ViewController.m */,
 				631DCE7F1A7144D0004FFE9E /* Main.storyboard */,
+				630E410E1A726B9A0050791F /* AddToDoListViewController.h */,
+				630E410F1A726B9A0050791F /* AddToDoListViewController.m */,
 				631DCE821A7144D0004FFE9E /* Images.xcassets */,
 				631DCE841A7144D0004FFE9E /* LaunchScreen.xib */,
 				631DCE751A7144D0004FFE9E /* Supporting Files */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630E41101A726B9A0050791F /* AddToDoListViewController.m in Sources */,
 				631DCE7E1A7144D0004FFE9E /* ViewController.m in Sources */,
 				631DCE7B1A7144D0004FFE9E /* AppDelegate.m in Sources */,
+				630E41131A729FBE0050791F /* ToDoListTableViewController.m in Sources */,
 				631DCE781A7144D0004FFE9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 				631DCE971A7144D0004FFE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		631DCE981A7144D0004FFE9E /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				631DCE9A1A7144D0004FFE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
