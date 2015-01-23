@@ -9,6 +9,8 @@
 #import "AddToDoListViewController.h"
 
 @interface AddToDoListViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textFiled;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
@@ -24,6 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if (sender != self.doneButton) return;
+    
+    if (self.textFiled.text.length != 0) {
+        self.toDoItem = [[ToDoItem alloc] init];
+        self.toDoItem.itemName = self.textFiled.text;
+        self.toDoItem.completed = NO;
+    }
+}
 /*
 #pragma mark - Navigation
 
